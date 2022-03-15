@@ -1,0 +1,153 @@
+.navigation-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    background: #72b198;
+    .logo {
+        margin: 0;
+        color: white;
+        font-weight: 100;
+        margin: 1.2rem 1.5rem;
+        width: 70px;
+      
+    }
+
+    .separator {
+       
+        height: 100%;
+       
+    }
+
+    .mobile-navigation {
+        display: none;
+    }
+
+    .hamburger-container {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        align-items: center;
+        .nav-item {
+            margin: 0 2rem;
+            color: white;
+            cursor: pointer;
+            font-weight: 700;
+            text-decoration: none;
+
+        }
+        .nav-item:hover {
+          
+        }
+
+        .profile-circle {
+            color: white;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background-color: #507c6b;
+            border: solid 10px #507c6b;
+            width: 180px;
+            height: 100%;
+            justify-content: center;
+            cursor: pointer;
+            .user-name {
+                overflow: hidden;
+                white-space: nowrap;
+            }
+        }
+    }
+
+    .mobile-view-logout {
+        display: none
+    }
+}
+
+
+
+
+
+
+@media(max-width:900px){
+    .navigation-container {
+        padding: 1.2rem 0;
+        .logo {
+           
+        }   
+    
+        .separator {
+            width: 100%;
+            height: 1px;
+            margin: 1.2rem 0;
+            background-color: #72b198;
+            
+        }
+    
+        .navigation {
+            display: none;
+        }
+        .hamburger-container {
+            display: flex;
+           z-index: 20;
+           margin-right:10px;
+
+           .profile-icon {
+               margin: 0 1.5rem;
+           }
+           
+            .nav-container {
+                .mobile-navigation {
+                    display: flex;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    flex-direction: column;
+                    background-color: white;
+                    padding: 2rem;
+                    
+                    .nav-item {
+                        text-decoration: none;
+                        color: black;
+                        margin: 15px 0;
+                    }   
+                    .nav-item:hover {
+                      
+                    }
+    
+                    .hamburger-close {
+                        margin: 1rem 0;
+                    }
+        
+                }
+
+            }
+           
+        }
+
+        .mobile-view-logout {
+            top: 70px;
+            position:absolute;
+            display: flex;
+            background-color: #72b198;
+            justify-content: flex-end;
+            align-items: center;
+           
+            color: white;
+            width: 100%;
+            font-weight: bold;
+            .name {
+                
+            }
+
+            .logout {
+                margin: 1.2rem 25px
+            }
+        }
+        
+    }
+
+   
+     
+}
