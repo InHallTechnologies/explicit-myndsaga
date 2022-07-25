@@ -14,6 +14,8 @@ import { Snackbar } from "@material-ui/core";
 import appleStore from '../../assets/apple-store.png';
 import playStore from '../../assets/play-store.png';
 import meditation from '../../assets/meditation.png';
+import CountUp from 'react-countup';
+import statList from "./statList";
 
 const LandingPage = (props) => {
   const videoRef = useRef(null);
@@ -142,6 +144,27 @@ const LandingPage = (props) => {
               <p className='tagline-def'>Contact us for free counselling and detailed demo of the service.  This is for women by the women community.</p>
               <p className='tagline'><span className='quotes'>{'" '}</span>With each generation, women’s ability to live the lives they choose reaches a place their grandmothers never thought possible. But that doesn’t mean everything is perfect or that our work is finished.<span className='quotes'> "</span> <span className='quote-author'> -- Cathy McMorris Rodgers</span></p>
           </div>
+      </div>
+
+      <div className='stats-screen-container'>
+        <div className='stats-list-container'>
+          {
+            statList.map(({tag, value, id}) => {
+              return(
+                <div className="list-content-container">
+                    <CountUp  start={0} end={value} enableScrollSpy={true} scrollSpyDelay={500} duration={3} >
+                      {({ countUpRef }) => (
+                        <div>
+                          <span className="tag" ref={countUpRef} />
+                        </div>
+                      )}
+                    </CountUp>
+                    <p className="value">{tag}</p>
+                </div>
+            )
+            })
+          }
+        </div>
       </div>
 
      

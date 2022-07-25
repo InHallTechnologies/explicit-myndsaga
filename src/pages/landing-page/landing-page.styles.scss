@@ -165,7 +165,8 @@
     }
 
     .fourth-screen-container {
-        background-image: url('../../assets/holding-hands.png');
+        // background-image: url('../../assets/holding-hands.png');
+        
         padding:7rem;
        .center-content {
             padding:50px 30px;
@@ -195,6 +196,37 @@
        } 
     }
 
+    .stats-screen-container {
+        background-image: url('../../assets//third-section-bg.png');
+        padding: 2rem 0 5rem;
+
+        .stats-list-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            justify-items: center;
+            .list-content-container {
+                display: flex;
+                width: 200px;
+                height: 200px;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                border-radius: 10px;
+                margin-top: 3rem;
+                background-color: rgba(255, 255, 255, 0.423);
+                .tag {
+                    font-size: 3rem;
+                    font-weight: bold;
+                    margin: 0 0 10px 0;
+                }
+                .value {
+                    font-size: 1.2rem;
+                    margin: 0;
+                    text-align: center;
+                }
+            }
+        }
+    }
 
     .fifth-screen-container {
        display: flex;
@@ -237,6 +269,7 @@
 
     .download-now-container {
         background-color: #FDFEF7;
+        background-image: url('../../assets/fifth-bg.png');
         .download-links-title{
             text-align: center;
             font-weight: bold;
@@ -263,9 +296,10 @@
     }
 
     .sixth-section-container {
-        background-image: url('../../assets/fifth-bg.png');
+        // background-image: url('../../assets/fifth-bg.png');
         padding:0 2rem 3rem 2rem;
-        color: whitesmoke;
+        background-color: #FDFEF7;
+        color: black;
         .sixth-section-title {
             
             font-weight: bold;
@@ -275,13 +309,13 @@
         }
         .contact-us-label{
             font-size: 1.6rem;
-            color: white;
+            color: #444;
             margin-top: 4rem;
             font-weight: bold;
         }
         .sixth-section-tagline{
             font-size: 1.2rem;
-            color: rgb(243, 243, 243);
+            color:#444;
             margin-top: 0rem;
             font-weight: bold;
         }
@@ -306,7 +340,7 @@
 
     .rights-reserved-container {
         background-color: #FDFEF7;
-      
+        background-image: url('../../assets/fifth-bg.png');
         .all-rights-reserved {
             font-weight: bold;
             margin: 0;
