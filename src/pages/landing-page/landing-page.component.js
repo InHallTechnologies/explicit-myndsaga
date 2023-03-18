@@ -71,13 +71,13 @@ const LandingPage = (props) => {
 
         <div className='option-container'>
           <img src={meditation} className="options-thumbnail" alt="What do you think about mental fitness" />
-          <span className='option-title'>Tell "MentalHealthForYou"</span>
+          <span className='option-title'>Share "YourStory"</span>
           <span className='option-action' onClick={handleOptionOne}>Let Us Know!</span>
         </div>
 
         <div className='option-container'>
           <img src={meditation} className="options-thumbnail" alt="What do you think about mental fitness" />
-          <span className='option-title'>Tell "MentalHealthForYou"</span>
+          <span className='option-title'>Share "InspiringThoughts"</span>
           <span className='option-action' onClick={handleOptionOne}>Let Us Know!</span>
         </div>
       </div>
@@ -156,6 +156,7 @@ const LandingPage = (props) => {
                       {({ countUpRef }) => (
                         <div>
                           <span className="tag" ref={countUpRef} />
+                          <span className="tag">{tag === "MoM Growth"? "%" : ""}</span>
                         </div>
                       )}
                     </CountUp>
